@@ -2,6 +2,17 @@
 	import svelteLogo from "./assets/svelte.svg";
 	import viteLogo from "/vite.svg";
 	import Counter from "./lib/Counter.svelte";
+	const options = {
+		method: "GET",
+		headers: {
+			Authorization2: import.meta.env.VITE_AUTHORIZATION2,
+		},
+	};
+
+	fetch("http://honoredfrankmanagement.johngolgota.repl.co/", options)
+		.then((response) => response.json())
+		.then((response) => console.log(response))
+		.catch((err) => console.error(err));
 </script>
 
 <main>
