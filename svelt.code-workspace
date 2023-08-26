@@ -1,7 +1,17 @@
 {
-"folders":[
-{
-"path":"."
-}
-]
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "editor.indentSize": "tabSize",
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": false,
+        "[svelte]": {
+            "editor.defaultFormatter": "svelte.svelte-vscode",
+            "editor.formatOnSave": true
+        }
+    }
 }
